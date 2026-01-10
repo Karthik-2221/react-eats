@@ -1,16 +1,49 @@
-# React + Vite
+# 🍔 ReactEats – Food Delivery Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReactEats is a modern, responsive food delivery frontend application built using React.  
+It allows users to browse food items, filter by categories and food type (veg / non-veg), search items, and manage a cart with real-time price calculation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 https://chipper-valkyrie-c7dbc2.netlify.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js (Vite)
+- **Styling:** Tailwind CSS
+- **State Management:**  
+  - Context API (UI & global state)  
+  - Redux Toolkit (Cart management)
+- **Icons:** React Icons
+- **Deployment:** Netlify
+- **Version Control:** Git & GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🧾 Browse food items with images and prices  
+- 🔍 Real-time search functionality  
+- 🥗 Filter food by:
+  - Categories (Breakfast, Soups, Pasta, Pizza, Burger, etc.)
+  - Veg & Non-Veg
+- 🛒 Cart sidebar with:
+  - Add / remove items
+  - Quantity control
+  - Dynamic subtotal, tax, and total calculation
+- 📱 Fully responsive UI
+- ⚡ Fast build using Vite
+- 🌐 Auto-deployed via Netlify on GitHub push
+
+---
+
+## 📂 Project Setup (Local)
+
+```bash
+git clone https://github.com/Karthik-2221/react-eats.git
+cd react-eats
+npm install
+npm run dev
