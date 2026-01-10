@@ -3,7 +3,7 @@ import CardsContainer from "../components/CardsContainer";
 import Navbar from "../components/Navbar";
 import food_items from "../data/food";
 import { useContext } from "react";
-import { dataContext } from "../context/userContext";
+import { dataContext } from "../context/UserContext";
 import CategoryContainer from "../components/CategoryContainer";
 import CartSidebar from "../components/CartSidebar";
 

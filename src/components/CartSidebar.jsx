@@ -1,7 +1,7 @@
 import { RxCross2 } from "react-icons/rx";
 import Cart from "../components/CartItem";
 import { useContext } from "react";
-import { dataContext } from "../context/userContext";
+import { dataContext } from "../context/UserContext";
 import { useSelector } from "react-redux";
 const CartSidebar = () => {
   let { showCart, setShowCart } = useContext(dataContext);
