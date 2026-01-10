@@ -1,0 +1,15 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
+import UserContext from "./context/userContext.jsx";
+import { Provider } from "react-redux";
+import { store } from "./store/store.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <UserContext>
+      <App />
+    </UserContext>
+  </Provider>
+);
