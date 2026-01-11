@@ -21,9 +21,9 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-24 flex justify-between items-center px-12 bg-emerald-100 backdrop-blur-lg shadow-md">
-      <div className="w-14 h-12 ml-5 mt-1 bg-blue-50 flex flex-col justify-center items-center rounded-md shadow-xl">
+      <div className="w-12 h-12 md:w-14 md:h-12 ml-0 mr-4 mt-1 bg-blue-50 flex flex-col justify-center items-center rounded-md shadow-xl">
         <div>
-          <MdFastfood className="w-8 h-8  text-emerald-500 " />
+          <MdFastfood className="w-4 h-4 md:w-8 md:h-8  text-emerald-500 " />
         </div>
         <p className="text-[10px] text-green-600 font-semibold">ReactEat</p>
       </div>
@@ -31,7 +31,7 @@ const Navbar = () => {
       <form
         onSubmit={(e) => e.preventDefault()}
         action=""
-        className="w-[60%] h-[60%] mt-2 bg-white flex items-center px-5 gap-5 rounded-md shadow-xl"
+        className="w-full h-[50%] md:w-[60%] md:h-[60%] mt-2 bg-white flex items-center px-4 gap-4 rounded-md shadow-xl"
       >
         <IoSearch className="text-green-500  w-8 h-8" />
         <input
@@ -44,7 +44,7 @@ const Navbar = () => {
       </form>
 
       <div
-        className="w-16 h-12 mr-5 mt-1 bg-blue-50 flex justify-center items-center rounded-md shadow-xl relative cursor-pointer"
+        className="w-14 h-10  mt-1 ml-4 mr-0 bg-blue-50 flex justify-center items-center rounded-md shadow-xl relative cursor-pointer"
         onClick={() => {
           setShowCart(true);
           console.log("clicked");
