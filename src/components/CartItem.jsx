@@ -22,7 +22,7 @@ const Cart = ({ name, id, price, image, qty }) => {
         </div>
 
         {/* Quantity Controller */}
-        <div className=" w-[70%]  h-10 flex  justify-center items-center border border-green-400  ">
+        <div className=" w-[90%]  h-10 flex  justify-center items-center border border-green-400  ">
           <button
             className="px-3 py-1 text-green-500  text-lg font-bold hover:bg-green-100 "
             onClick={() => {

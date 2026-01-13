@@ -5,6 +5,8 @@ import { GiNoodles } from "react-icons/gi";
 import { GiFullPizza } from "react-icons/gi";
 import { PiHamburgerFill } from "react-icons/pi";
 import { MdFoodBank } from "react-icons/md";
+import { FaBowlFood } from "react-icons/fa6";
+import { GiChickenOven } from "react-icons/gi";
 const Category = [
   {
     id: 1,
@@ -46,12 +48,12 @@ const Category = [
   {
     id: 8,
     name: "veg",
-    icon: <PiHamburgerFill className="w-20 h-20  text-green-600" />,
+    icon: <FaBowlFood className="w-20 h-20  text-green-600" />,
   },
   {
     id: 9,
     name: "non_veg",
-    icon: <PiHamburgerFill className="w-20 h-20  text-green-600" />,
+    icon: <GiChickenOven className="w-20 h-20  text-green-600" />,
   },
 ];
 

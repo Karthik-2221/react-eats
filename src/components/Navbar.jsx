@@ -1,6 +1,6 @@
 import { MdFastfood } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
-import { FiShoppingBag } from "react-icons/fi";
+import { TiShoppingCart } from "react-icons/ti";
 import { useContext, useEffect } from "react";
 import { dataContext } from "../context/UserContext";
 import food_items from "../data/food";
@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-24 flex justify-between items-center px-12 bg-emerald-100 backdrop-blur-lg shadow-md">
-      <div className="w-12 h-12 md:w-14 md:h-12 ml-0 mr-4 mt-1 bg-blue-50 flex flex-col justify-center items-center rounded-md shadow-xl">
+      <div className="w-12 h-12 md:w-14 p-2 md:h-12 ml-0 mr-4 mt-1 bg-blue-50 flex flex-col justify-center items-center rounded-md shadow-xl">
         <div>
           <MdFastfood className="w-4 h-4 md:w-8 md:h-8  text-emerald-500 " />
         </div>
@@ -44,16 +44,16 @@ const Navbar = () => {
       </form>
 
       <div
-        className="w-14 h-10  mt-1 ml-4 mr-0 bg-blue-50 flex justify-center items-center rounded-md shadow-xl relative cursor-pointer"
+        className=" w-28 h-10 md:w-15 md:h-10  mt-1 ml-4 mr-0 bg-blue-50 flex justify-center items-center rounded-md shadow-xl relative cursor-pointer"
         onClick={() => {
           setShowCart(true);
           console.log("clicked");
         }}
       >
-        <span className=" absolute top-0 right-0 text-green-500 font-bold  text-[15px]">
+        <span className=" absolute top-0 right-1 text-green-500 font-bold  text-[15px]">
           {itemsCount.length}
         </span>
-        <FiShoppingBag className="w-7 h-7 text-green-500 " />
+        <TiShoppingCart className="w-7 h-7 text-green-500 " />
       </div>
     </div>
   );

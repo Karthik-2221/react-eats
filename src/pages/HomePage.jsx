@@ -6,7 +6,6 @@ import { useContext } from "react";
 import { dataContext } from "../context/UserContext";
 import CategoryContainer from "../components/CategoryContainer";
 import CartSidebar from "../components/CartSidebar";
-
 const HomePage = () => {
   let { categories, setCategories, input } = useContext(dataContext);
 
@@ -32,10 +31,12 @@ const HomePage = () => {
   return (
     <div>
       <Navbar></Navbar>
+
       {/* category section */}
       {!input ? (
         <CategoryContainer Category={Category} filter={filter} />
       ) : null}
+
       {/* food items cards list  */}
       {categories.length > 0 ? (
         <div className=" flex flex-wrap justify-center items-center gap-3 m-5 ">

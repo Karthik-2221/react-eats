@@ -6,7 +6,7 @@ const Card = ({ name, image, id, price, type }) => {
   let dispatch = useDispatch();
 
   return (
-    <div className="w-45 h-70 bg-white p-2 rounded-md flex flex-col gap-2 m-2">
+    <div className=" w-35 h-70 md:w-45 md:h-70 bg-white p-2 rounded-md flex flex-col gap-2 m-1">
       <div className="w-full h-40 overflow-hidden ">
         <img src={image} alt="" className=" object-cover rounded-md" />
       </div>

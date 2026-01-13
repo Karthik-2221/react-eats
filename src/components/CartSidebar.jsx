@@ -41,6 +41,7 @@ const CartSidebar = () => {
             <div>
               {cartItems.map((item) => (
                 <Cart
+                  key={item.id}
                   name={item.name}
                   price={item.price}
                   image={item.image}
